@@ -1,0 +1,12 @@
+{
+  "name": "merge-md",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node ./scripts/content.js && node ./scripts/title.js && node ./scripts/merge.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
