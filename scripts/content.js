@@ -6,7 +6,7 @@ let distPath = 'Process.md';
 // 清空文件
 fs.truncate(distPath, 0, function () { console.log('>>> 1.Clean up files') })
 
-fs.appendFile(distPath, `> 更新时间：${format('YYYY-MM-DD hh:mm:ss')}（脚本自动生成)${os.EOL}`, function (err) {
+fs.appendFile(distPath, `> 更新时间：${format('YYYY-MM-DD hh:mm:ss')}（脚本自动生成，详见：info.md)${os.EOL}`, function (err) {
    if (err) throw err;
    console.log('>>> 2.Date updated');
 });
